@@ -35,5 +35,3 @@ The python scripts used to preprocess the data and create the json files require
  3. Open the index.template.html and use a live server to launch the map.
 
  ![Launch Server](launch_server.png)
- **Mobility Map**
-  ![Launch Server](Mobility_Map.png)
