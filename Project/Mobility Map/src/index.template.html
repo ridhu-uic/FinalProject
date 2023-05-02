@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Visualize Data with a Choropleth Map - freeCodeCamp</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Source+Sans+Pro&amp;display=swap'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h2 id='title'>Mobility of people in United States during 2019-2021</h2>
+<div id='container'>
+  <svg id='canvas'>
+
+  </svg>
+  <div id='rightSide'>
+    <div id='tooltip'>
+
+    </div>
+    <svg id='legend'>
+      <g>
+        <rect x="10" y="0" width="40" height="40" fill="white"></rect>
+        <text x="60" y="20" fill="white">0</text>
+      </g>
+      <g>
+        <rect x="10" y="40" width="40" height="40" fill="#e9ffdb"></rect>
+        <text x="60" y="60" fill="white"><= 10000</text>
+      </g>
+      <g>
+        <rect x="10" y="80" width="40" height="40" fill="#98fb98"></rect>
+        <text x="60" y="100" fill="white"><=100000</text>
+      </g>
+      <g>
+        <rect x="10" y="120" width="40" height="40" fill="#32cd32"></rect>
+        <text x="60" y="140" fill="white"><= 1000000</text>
+      </g>
+      <g>
+        <rect x="10" y="160" width="40" height="40" fill="limegreen"></rect>
+        <text x="60" y="180" fill="white"><= 1000000</text>
+      </g>
+      <g>
+        <rect x="10" y="180" width="40" height="40" fill="green"></rect>
+        <text x="60" y="200" fill="white">>= 1000000</text>
+      </g>
+    </svg>
+
+    <div class="container1">
+
+      <label for="Selector_label">Select a Year:</label>
+      <select name="year_select" class="selector" id="year_select">
+        <option value="2019">2019</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+      </select>
+
+    <label for="Selector_label">Select a Month:</label>
+
+    <select name="month_select" id="month_select" class="selector">
+      <option value="1">Jan</option>
+      <option value="2">Feb</option>
+      <option value="3">March</option>
+      <option value="4">April</option>
+      <option value="5">May</option>
+      <option value="6">June</option>
+      <option value="7">July</option>
+      <option value="8">Aug</option>
+      <option value="9">Sept</option>
+      <option value="10">Oct</option>
+      <option value="11">Nov</option>
+      <option value="12">Dec</option>
+    </select>
+
+    <label for="Selector_label">Select a Week:</label>
+
+    <select name="week_select" id="week_select" class="selector">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+
+
+  </div>
+
+
+</div>
+
+</div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/5.16.0/d3.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/topojson/3.0.2/topojson.min.js'></script>
+<script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="script.js"></script>
+
+
+</body>
+</html>
