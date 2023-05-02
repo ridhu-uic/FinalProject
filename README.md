@@ -33,3 +33,5 @@ The python scripts used to preprocess the data and create the json files require
 	 1. git clone https://github.com/ridhu-uic/FinalProject.git
  2. Open the required folder in vscode. eg : Mobility Map. *Same procedure can be followed for other maps.
  3. Open the index.template.html and use a live server to launch the map.
+
+ ![Launch Server](launch_server.png)
